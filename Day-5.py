@@ -45,6 +45,13 @@ else:
     very_light=[]
     overload=[]
 
+print("Total Valid Weights:", valid_entries)
+print("Affected items due to PLI:", affected)
+print("Very Light:", very_light)
+print("Normal Load:", normal_load)
+print("Heavy Load:", heavy_load)
+print("Overload:", overload)
+print("Invalid entries:", invalid_entries)
 
 
 
