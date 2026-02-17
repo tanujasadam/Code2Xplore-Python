@@ -1,41 +1,13 @@
-# 🐍 60 Days of Python Challenge
+Day 05 - Smart Transport Load Balancing
+Full Name: Tanuja Sadam
+L value (letters excluding spaces): 11
+PLI value: 2
+Applied Rule: Rule C - Keep only normal and heavy loads
 
-This repository documents my 60-day journey of learning and practicing Python consistently.
+Problem Statement
+Classify package weights into Very Light, Normal, Heavy, Overload, or Invalid entries. Apply personalized logic (PLI) based on the number of letters in the name.
 
-The purpose of this challenge is to improve programming skills, strengthen core concepts, and develop problem-solving ability through daily practice.
-
-## 🎯 Objectives
-
-- Practice Python every day for 60 days
-- Build strong fundamentals
-- Improve logical and analytical thinking
-- Gain confidence in writing clean code
-- Develop consistency and discipline.
-
-## 📚 Topics Covered
-
-Throughout this challenge, I will work on:
-
-- Variables and Data Types  
-- Conditional Statements  
-- Loops  
-- Functions  
-- Lists, Tuples, Sets, Dictionaries  
-- String Manipulation  
-- File Handling  
-- Object-Oriented Programming  
-- Problem Solving  
-- Small Projects
-  Each program focuses on understanding concepts clearly and applying them through practical examples.
-
-
-## 🚀 Final Goal
-
-By the end of this challenge, I aim to:
-
-- Write efficient and readable Python code  
-- Solve problems with better logic  
-- Build small real-world applications  
-- Strengthen my overall programming foundation
-  
-Consistency over perfection.
+Approach / Logic Used
+Take input weights and classify based on ranges.
+Apply PLI rules based on L % 3.
+Display final categorized weights and counts.
