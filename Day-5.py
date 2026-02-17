@@ -26,24 +26,7 @@ for w in weights:
     else:
         overload = overload + [w]
         valid_entries += 1
-name=input("Enter your full name:")
-length=len(name.replace(" ", ""))
-PLI = length%3
-print("L value:", length)
-print("PLI value:", PLI)
-affected=0
 
-if PLI==0:
-    invalid_entries = invalid_entries + overload
-    affected = len(overload)
-    overload=[]
-elif PLI==1:
-    affected = len(very_light)
-    very_light=[]
-else:
-    affected = len(very_light) + len(overload)
-    very_light=[]
-    overload=[]
 
 
 
