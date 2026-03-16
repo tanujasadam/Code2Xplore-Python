@@ -1,13 +1,39 @@
-Day 05 - Smart Transport Load Balancing
-Full Name: Tanuja Sadam
-L value (letters excluding spaces): 11
-PLI value: 2
-Applied Rule: Rule C - Keep only normal and heavy loads
+# Smart Campus Energy Analyzer 
 
-Problem Statement
-Classify package weights into Very Light, Normal, Heavy, Overload, or Invalid entries. Apply personalized logic (PLI) based on the number of letters in the name.
+This project is a Python program created for the **Code2Xplore – 60 Days Challenge (Day 7)**.  
+It analyzes energy consumption data from different campus buildings and generates an efficiency report.
 
-Approach / Logic Used
-Take input weights and classify based on ranges.
-Apply PLI rules based on L % 3.
-Display final categorized weights and counts.
+## Project Overview
+The Smart Campus Energy Analyzer processes a list of energy readings and classifies them into categories based on energy usage levels. The program also calculates total consumption and identifies inefficient energy patterns.
+
+## Features
+- Accepts multiple energy readings
+- Classifies energy usage into categories
+- Stores categorized data using a dictionary
+- Calculates total energy consumption
+- Detects:
+  - Overconsumption
+  - Balanced Usage
+  - Energy Waste
+- Displays a final energy efficiency report
+
+## Technologies Used
+- Python
+- Lists
+- Loops (`for`)
+- Conditional Statements
+- List Comprehension
+- Dictionary
+- Tuple
+
+## Energy Classification Rules
+
+| Energy Reading | Category |
+|----------------|----------|
+| `< 0` | Invalid |
+| `0 – 50` | Efficient |
+| `51 – 150` | Moderate |
+| `> 150` | High Consumption |
+
+## Example Input
+[20, 70, 160, -5, 40, 120]
