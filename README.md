@@ -1,7 +1,7 @@
 # Autonomous Smart City Data Intelligence System
 
 ##  Overview
-This project is part of the Code2Xplore – 60 Days Challenge (Day 7).  
+This project is part of the Code2Xplore – 60 Days Challenge (Day 8).  
 It simulates a smart city environment by generating and analyzing multi-source sensor data such as traffic density, air quality index (AQI), and energy consumption.
 
 The system uses Python and Data Science tools to analyze, classify, and predict risk zones for better urban decision-making.
