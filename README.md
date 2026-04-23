@@ -1,39 +1,92 @@
-# Smart Campus Energy Analyzer 
+# Autonomous Smart City Data Intelligence System
 
-This project is a Python program created for the **Code2Xplore – 60 Days Challenge (Day 7)**.  
-It analyzes energy consumption data from different campus buildings and generates an efficiency report.
+##  Overview
+This project is part of the Code2Xplore – 60 Days Challenge (Day 7).  
+It simulates a smart city environment by generating and analyzing multi-source sensor data such as traffic density, air quality index (AQI), and energy consumption.
 
-## Project Overview
-The Smart Campus Energy Analyzer processes a list of energy readings and classifies them into categories based on energy usage levels. The program also calculates total consumption and identifies inefficient energy patterns.
+The system uses Python and Data Science tools to analyze, classify, and predict risk zones for better urban decision-making.
 
-## Features
-- Accepts multiple energy readings
-- Classifies energy usage into categories
-- Stores categorized data using a dictionary
-- Calculates total energy consumption
-- Detects:
-  - Overconsumption
-  - Balanced Usage
-  - Energy Waste
-- Displays a final energy efficiency report
+##  Objectives
+- Simulate smart city data using random values  
+- Store data using list of dictionaries  
+- Perform analysis using NumPy and Pandas  
+- Classify zones into risk categories  
+- Detect high-risk patterns  
+- Implement a custom risk scoring system  
 
-## Technologies Used
-- Python
-- Lists
-- Loops (`for`)
-- Conditional Statements
-- List Comprehension
-- Dictionary
-- Tuple
+##  Features
+- Data simulation for multiple zones  
+- Conversion to Pandas DataFrame  
+- Matrix operations using NumPy  
+- Risk score calculation  
+- Zone classification (Safe, High Risk, Energy Critical)  
+- Identify top 3 worst zones  
+- Pattern detection and analysis  
 
-## Energy Classification Rules
+##  Data Format
+Each record contains:
 
-| Energy Reading | Category |
-|----------------|----------|
-| `< 0` | Invalid |
-| `0 – 50` | Efficient |
-| `51 – 150` | Moderate |
-| `> 150` | High Consumption |
+{
+    "zone": int,
+    "traffic": int (0–100),
+    "air_quality": int (0–300),
+    "energy": int (0–500)
+}
 
-## Example Input
-[20, 70, 160, -5, 40, 120]
+##  Technologies Used
+- Python  
+- Pandas  
+- NumPy  
+- random module  
+- math module  
+
+##  Risk Score Formula
+risk_score = (traffic * 0.4 + AQI * 0.4 + energy * 0.2)
+
+##  Classification Rules
+- AQI > 200 OR traffic > 80 → High Risk  
+- energy > 400 → Energy Critical  
+- traffic < 30 AND AQI < 100 → Safe Zone  
+
+##  Output
+- DataFrame with processed data  
+- Categorized zones  
+- Top 3 worst zones  
+- Risk statistics (max, avg, min)  
+- Final system decision:
+  - City Stable  
+  - Moderate Risk  
+  - High Alert  
+  - Critical Emergency  
+
+##  Test Cases
+- Extreme pollution  
+- Zero traffic  
+- Random spikes  
+
+##  Personalization Applied
+- Dataset shuffled based on register number rule  
+- Custom risk formula used  
+- Manual sorting implemented (without sort_values())  
+
+## Project Structure
+Smart-City-Data-System/
+│── main.py  
+│── README.md  
+│── output/ (optional)
+
+##  How to Run
+
+git clone https://github.com/your-username/smart-city-system.git  
+cd smart-city-system  
+python main.py  
+
+## Learning Outcomes
+- Learned data analysis using Pandas and NumPy  
+- Understood real-world data simulation  
+- Built custom logic for classification  
+- Improved problem-solving skills  
+
+
+##  Unique Insight
+A smart city is defined by how efficiently it uses data to improve safety, sustainability, and quality of life.
